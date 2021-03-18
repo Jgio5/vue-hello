@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello Vue!</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Inserimento di Vue.js -->
+        <div id="root">
+            <h1>{{text}}</h1>
+
+            <!-- Prova esercizio a lezione -->
+            <!-- <h1>Da questa casella copio ciò che scrivi:</h1>
+            <input class ="text_casual" type="text" v-model="test">
+            <p>{{test}}</p> -->
+
+            <div class="img_zone">
+                <!-- tramite click evoco la funzione "changeVisibility" -->
+                <button :class="colorClass" @click="changeVisibilityColor" class="btn">Visualizza immagine</button>
+                <!-- ho inserito la viariabile "visibilityClass" tramite vue.js all'interno dell'attributo class dell'img-->
+                <img :class="visibilityClass" src="img/logo.png" alt="Logo boolean">
+            </div>
+        </div>
+    </div>
+    <script src= "js/main.js"></script>
+</body>
+</html>
